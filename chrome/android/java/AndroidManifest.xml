@@ -334,7 +334,7 @@ by a child template that "extends" this file.
             android:targetActivity="org.chromium.chrome.browser.document.DocumentActivity"
             android:exported="false"/>
         <activity android:name="org.chromium.chrome.browser.document.IncognitoDocumentActivity"
-            android:icon="@mipmap/incognito_app_icon"
+            android:icon="@mipmap/ic_incognito"
             android:exported="false"
             android:theme="@style/IncognitoTheme"
             android:taskAffinity=""

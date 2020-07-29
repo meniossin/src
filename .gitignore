@@ -1,1 +1,3 @@
 *.pyc
+
+third_party/*

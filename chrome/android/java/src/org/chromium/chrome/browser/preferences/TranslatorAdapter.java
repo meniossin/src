@@ -116,9 +116,9 @@ public class TranslatorAdapter extends BaseAdapter implements OnClickListener {
         mPrepopulatedTranslators = new ArrayList<>();
         mPrepopulatedDescriptions = new ArrayList<>();
         mPrepopulatedTranslators.add("Default");
-        mPrepopulatedDescriptions.add("Microsoft Translator");
-        mPrepopulatedTranslators.add("Google");
         mPrepopulatedDescriptions.add("Google Translate");
+        mPrepopulatedTranslators.add("Microsoft");
+        mPrepopulatedDescriptions.add("Microsoft Translator");
         mPrepopulatedTranslators.add("Yandex");
         mPrepopulatedDescriptions.add("Yandex Translator");
         mPrepopulatedTranslators.add("Baidu");
