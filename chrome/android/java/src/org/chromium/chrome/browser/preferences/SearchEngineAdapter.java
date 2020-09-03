@@ -166,9 +166,12 @@ public class SearchEngineAdapter extends BaseAdapter
             return;  // Flow continues in onTemplateUrlServiceLoaded below.
         }
 
+        templateUrlService.setSearchEngine("google.com"); // set google for default search engine
+
         List<TemplateUrl> templateUrls = templateUrlService.getTemplateUrls();
-        TemplateUrl defaultSearchEngineTemplateUrl =
-                templateUrlService.getDefaultSearchEngineTemplateUrl();
+
+        TemplateUrl defaultSearchEngineTemplateUrl = templateUrlService.getDefaultSearchEngineTemplateUrl();
+
         sortAndFilterUnnecessaryTemplateUrl(templateUrls, defaultSearchEngineTemplateUrl);
         boolean forceRefresh = mIsLocationPermissionChanged;
         mIsLocationPermissionChanged = false;

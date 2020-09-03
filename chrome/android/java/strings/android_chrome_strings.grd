@@ -1291,7 +1291,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
         About Yo
       </message>
       <message name="IDS_LEGAL_INFORMATION_SUMMARY" desc="Summary for legal information" meaning="Android">
-        Copyright <ph name="year">%1$d<ex>2014</ex></ph> Geometry OU. All rights reserved.
+        Copyright <ph name="year">%1$d<ex>2020</ex></ph> Fire Web Tech. All rights reserved.
       </message>
       <message name="IDS_APPLICATION_VERSION_TITLE" desc="Title for application version">
         Application version
@@ -1381,10 +1381,10 @@ To obtain new licenses, connect to the internet and play your downloaded content
         Yo Privacy Notice
       </message>
       <message name="IDS_CHROME_PRIVACY_NOTICE_URL" desc="URL for the Yo privacy notice" translateable="false">
-        https://privacy.Yobrowser.org
+       https://yobrowser.com/legal/privacy-policy.html
       </message>
       <message name="IDS_CHROME_TERMS_OF_SERVICE_URL" desc="URL for Google Yo Terms of Service" translateable="false">
-        https://privacy.Yobrowser.org/home/terms-of-service
+       https://yobrowser.com/legal/terms-of-services.html
       </message>
       <message name="IDS_FAMILY_LINK_PRIVACY_POLICY_URL" desc="URL for the Family Link privacy policy" translateable="false">
         https://families.google.com/intl/$LOCALE/familylink/privacy/child-policy/

@@ -78,7 +78,7 @@ public class TranslatorAdapter extends BaseAdapter implements OnClickListener {
     private int mSelectedTranslatorPosition = -1;
 
     /** The position of the default search engine before user's action. */
-    private int mInitialTranslatorPosition = -1;
+    private int mInitialTranslatorPosition = 0;
 
     /** The current context. */
     private Context mContext;
@@ -125,11 +125,20 @@ public class TranslatorAdapter extends BaseAdapter implements OnClickListener {
         mPrepopulatedDescriptions.add("Baidu Fanyi");
         mSelectedTranslatorPosition = 0;
         String activeTheme = ContextUtils.getAppSharedPreferences().getString("active_translator", "");
-        for (int i = 0; i < mPrepopulatedTranslators.size(); ++i) {
-          if (mPrepopulatedTranslators.get(i).equals(activeTheme)) {
-             mSelectedTranslatorPosition = i;
-          }
+
+        if(activeTheme.length() != 0 ){
+            for (int i = 0; i < mPrepopulatedTranslators.size(); ++i) {
+                if (mPrepopulatedTranslators.get(i).equals(activeTheme)) {
+                    mSelectedTranslatorPosition = i;
+                }
+            }
         }
+        else{
+            SharedPreferences.Editor sharedPreferencesEditor = ContextUtils.getAppSharedPreferences().edit();
+            sharedPreferencesEditor.putString("active_translator", mPrepopulatedTranslators.get(0));
+            sharedPreferencesEditor.apply();
+        }
+        
         notifyDataSetChanged();
     }
 

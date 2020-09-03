@@ -292,7 +292,7 @@ public class AppMenu implements OnItemClickListener, OnKeyListener {
         if (activity instanceof ChromeActivity) {
           Tab currentTab = ((ChromeActivity)activity).getActivityTab();
           if (currentTab != null)
-            canShowExtensions = true;
+            //canShowExtensions = false;
           webContents = currentTab != null ? currentTab.getWebContents() : null;
         }
 
